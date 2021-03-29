@@ -1,3 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
 h1 {
-  color: brown;
+  margin-top: 20px;
+  font-size: 4.5rem;
+  font-weight: 500;
+  color: #eb6e4b;
+  text-align: center;
+}
+#user a {
+  font-size: 2.3rem;
+  font-weight: 400;
+  color: #1da1f2;
+  text-decoration: none;
+}
+#user {
+  margin-top: 15px;
+  text-align: center;
+}
+.app {
+  border-radius: 20px;
+  padding: 40px;
+  margin: 50px auto 0;
+  max-width: 900px;
+  min-height: 700px;
+  box-shadow: 1px 2px 7px 1px black;
+  transition: 0.5s;
+  cursor: pointer;
+  background: #1f71dd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2f80ed,
+    #2f80ed
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2f80ed
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.app:hover {
+  max-width: 950px;
+  min-height: 750px;
+  background-color: #2e65ad;
+}
+.app h2 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.button__submit {
+  background-image: linear-gradient(
+    to right,
+    #ff7e5f 0%,
+    #feb47b 51%,
+    #ff7e5f 100%
+  );
+}
+.button__submit {
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 10px 29px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-style: none;
+  border-radius: 10px;
+  display: block;
+}
+
+.button__submit:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.container__form {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+#input__city {
+  height: 30px;
+  width: 40%;
+  font-size: 1.6rem;
+  color: white;
+  border: none;
+  border-style: none none none;
+  background-color: transparent;
+  border-bottom: 3px solid #feab76;
+}
+#input__city::placeholder {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding-left: 15px;
+  margin-left: 15px;
 }
