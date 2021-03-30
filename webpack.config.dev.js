@@ -33,6 +33,10 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/style/index.css'),
           to: './assets/style/index.css'
+        },
+        {
+          from: path.resolve(__dirname, 'src/images'),
+          to: './assets/images'
         }
       ]
     }),
