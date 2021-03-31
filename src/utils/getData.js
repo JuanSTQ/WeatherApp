@@ -1,7 +1,7 @@
 
-const APIKEY = 'ce0e89ec2f86acf06f37f79c70c53467';
-const city = "London";
-let id = 3654870;
+const APIKEY = process.env.APIKEY;
+
+
 //const API =`https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=${APIKEY}`;
 //const urlimg =  'http://openweathermap.org/img/w/09d.png'
 const getCelcius = (temp)=>{
