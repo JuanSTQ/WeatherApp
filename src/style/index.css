@@ -94,6 +94,7 @@ h1 {
   display: flex;
   align-items: center;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 #input__city {
   height: 30px;
@@ -114,4 +115,34 @@ h1 {
 }
 .jaja {
   width: 100px;
+}
+.render {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: flex-start; */
+  justify-content: center;
+}
+.container__weather {
+  /*   min-width: 250px;
+  min-height: 200px; */
+  width: 230px;
+  height: 250px;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.container__weather img {
+  width: 80px;
+}
+
+.container__weather h2 {
+  margin-bottom: 10px;
+  font-size: 2.8rem;
+}
+.container__weather p {
+  font-size: 2.2rem;
+  font-weight: 400;
 }
