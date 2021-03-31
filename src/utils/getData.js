@@ -11,7 +11,7 @@ const getFarenheit = (temp)=>{
   return parseInt(((temp - 273.15 )* 9/5) + 32)
 }
 const getContainer = ({description,icon},{temp},cityName)=>{
-  const container = document.createElement('div');
+  const container = document.createElement('article');
   const h2 = document.createElement('h2');
   const img = document.createElement('img');
   const p = document.createElement('p');

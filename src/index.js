@@ -8,17 +8,19 @@ import {getValidNameCity} from './utils/getValidNameCity';
   const form = document.querySelector('form.container__form')
   const render = document.querySelector('.render')
   let beforeCity = []
+
+
   const getText = async (event)=>{
+    
     const cityName = input.value;
     const validName = getValidNameCity(cityName);
 
     if(beforeCity.indexOf(validName)>=0){
-      return console.log("repetido")
+      return ''
     }else if(validName){
-      const view = await getData(validName);
       beforeCity.push(validName);
+      const view = await getData(validName);
       view ? render.append(view) : input.value = ""
-      return console.log('sucessfull')
     }else{
       input.value=""
       return window.alert('Ingresa de nuevo tu Ciudad')
