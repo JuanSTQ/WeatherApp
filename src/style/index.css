@@ -42,16 +42,9 @@ h1 {
   box-shadow: 1px 2px 7px 1px black;
   transition: 0.5s;
   cursor: pointer;
-  background: #1f71dd; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2f80ed,
-    #2f80ed
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #2f80ed
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #1f71dd;
+  background: -webkit-linear-gradient(to right, #2f80ed, #2f80ed);
+  background: linear-gradient(to right, #2f80ed);
 }
 .app:hover {
   max-width: 950px;
@@ -86,7 +79,7 @@ h1 {
 }
 
 .button__submit:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center;
   color: #fff;
   text-decoration: none;
 }
@@ -120,12 +113,10 @@ h1 {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: flex-start; */
+
   justify-content: center;
 }
 .container__weather {
-  /*   min-width: 250px;
-  min-height: 200px; */
   width: 230px;
   height: 250px;
   padding: 15px;

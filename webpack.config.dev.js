@@ -40,7 +40,7 @@ module.exports = {
         }
       ]
     }),
-    new Dotenv(),
+    new Dotenv()
   ],
   devServer: {
     contentBase: path.join(__dirname,"dist"),
